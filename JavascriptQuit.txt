@@ -1,9 +1,8 @@
 console.log("Hello World.");
 
 //# 2
-let fname = "first";
-let Iname = "last";
-console.log("Iname" "fname");
+
+console.log(lname,fname);
 
 //#3
 var x = 1;

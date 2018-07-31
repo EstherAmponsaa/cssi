@@ -15,9 +15,11 @@
 let customer_name;
 let balance;
 
-function openAccount(name){
-  balance = 0;
+function openAccount(name,balance = 0){
+  myBalance = balance ;
   // Set the value for customer_name equal to name below
+  customer_name =name;
+  return name + " has opened a new account with a balance of $" + myBalance
 
   return //write the statment you need to return here
 }
