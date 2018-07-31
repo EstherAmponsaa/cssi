@@ -1,0 +1,18 @@
+console.log("Hello World.");
+
+//# 2
+let fname = "first";
+let Iname = "last";
+console.log("Iname" "fname");
+
+//#3
+var x = 1;
+var y = 2;
+[x ,y] = [y , x];
+console.log('x:', x,'y:',y );
+
+//#4
+console.log("Working correctly");
+
+//#7
+15
