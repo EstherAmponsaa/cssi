@@ -18,4 +18,26 @@ let redButton = document.querySelector('#red');
 // Use addEventListener to respond to a click event.
 redButton.addEventListener('click', (e) => {
   console.log("You clicked the red button!");
+  responseBox.style.backgroundColor = "red";
+  responseBox.innerHTML = "red";
 })
+
+let greenButton = document.querySelector('#green');
+
+// Use addEventListener to respond to a click event.
+greenButton.addEventListener('click', (e) => {
+  console.log("You clicked the green button!");
+  responseBox.style.backgroundColor = "green";
+  responseBox.innerHTML = "green";
+})
+
+let blueButton = document.querySelector('#blue');
+
+// Use addEventListener to respond to a click event.
+blueButton.addEventListener('click', (e) => {
+  console.log("You clicked the blue button!");
+  responseBox.style.backgroundColor = "blue";
+  responseBox.innerHTML = "blue";
+})
+
+let reponseBox = document.querySelector('#reponseBox');

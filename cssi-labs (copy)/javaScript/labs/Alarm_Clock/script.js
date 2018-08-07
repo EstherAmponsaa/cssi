@@ -27,7 +27,7 @@ console.log(My_Alarm("7:oo"));
 function Mom_Alarm(time){
   return "Hey,Mom, wake up! It is "+time;
 };
-console.log(Mom_Alarm("7:oo"));
+console.log(Mom_Alarm("5:oo"));
 
 function Family_Alarm(time,Mom){
   return "Hey,Mom, wake up! It is "+time;
@@ -35,7 +35,13 @@ function Family_Alarm(time,Mom){
 console.log(Family_Alarm("6:oo"));
 
 
-function Important_Alarm("wake up,wake up,wake UP!!"){
-  return "Hey,Mom, wake up! It is "+time;
+function Important_Alarm(message){
+  return message.toUpperCase();
 };
-console.log(Family_Alarm("6:oo"));
+console.log(Important_Alarm("wake up,wake up, wake up!!"));
+
+
+function Snooze_Alarm(time){
+  return "The alarm for " +time+" has been changed to "+ (time+1);
+};
+console.log(Snooze_Alarm(6));

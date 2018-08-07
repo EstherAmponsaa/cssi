@@ -15,9 +15,33 @@
 console.log("Running Window Events Script");
 window.addEventListener("keypress", e=> {
 console.log(e.keyCode);
+console.log(e.key);
 
 
 })
 
+let box6 = document.querySelector("#box6");
+let size = 100;
 
+window.addEventListener("keypress", e=> {
+  if(e.key ==='c'){
+    box6.style.borderRadius = "50%";
+    box6.style.height = (size/2)+"px";
+    box6.style.width = (size/2)+"px";
+  }
+
+  if(e.key ==='s'){
+    box6.style.borderRadius = "0";
+    box6.style.height = (size)+"px";
+    box6.style.width = (size)+"px";
+  }
+
+});
+let rect = document.querySelector("#rect");
+window.addEventListener("scroll", e=> {
+rect.style.backgroundColor = 'black';
+});
+
+
+// border-radius: 50%;
 // insert a function that prints out the key code of a key pressed
