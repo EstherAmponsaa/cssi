@@ -54,6 +54,5 @@
 #string = "hello there"
 #for letter in string:
 #    print(letter.upper())
-
-for i in range(5):
-    print(i)
+#for i in range(5):
+#    print(i)

@@ -24,8 +24,46 @@ inside_movie = {
     "reviews": 463787
 }
 
+
 # Do not edit the code above!
 
 # Write your code below to update the information in accordance with its
 # IMDB page: http://www.imdb.com/title/tt2096673/
 
+inside_movie["year_released"] = 2015
+inside_movie["score"] = 8.2
+inside_movie["reviews"] = 492446
+
+# removing key out_of
+inside_movie.pop("out_of")
+
+inside_movie["genre"] = ["Animation", "Adventure", "Comedy"]
+
+# printing key/values
+for i,j in  inside_movie.items():
+    print i,":",j
+
+shrek_movie = { "title": "Shrek",
+"id": "tt0126029",
+"year_released": 2001,
+"rating": "PG",
+"score": 7.9,
+"reviews": 531432,
+"genre":["Animation", "Adventure", "Comedy"]
+}
+for i,j in  shrek_movie.items():
+    print i,":",j
+
+movies = [shrek_movie,inside_movie]
+
+user = raw_input("Enter a genre: ").capitalize()
+
+bestMovie = {"title":"none","score":0}
+
+for i in movies:
+    if user in i["genre"]:
+        if bestMovie["score"] < i["score"]:
+            bestMovie["score"] = i["score"]
+            bestMovie["title"] = i["title"]
+
+print bestMovie["title"]
